@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600;900&display=swap');
+
+
+@font-face {
+    font-family: "VIC-B";
+    src: url("../assets/fonts/VIC-Bold.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "VIC-R";
+    src: url("../assets/fonts/VIC-Regular.woff2") format("woff2");
+}
+
+:root {
+    --primary-color: 240, 100%, 63%;
+}
+
+body {
+    min-height: 100vh;
+    line-height: 1.6;
+    font-family: 'VIC-R', Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: rgb(239, 239, 239);
+    color: rgb(75, 75, 75);
+    padding-bottom: 5rem;
+    padding-inline: 2rem;
+}
+
+#app {
+
+    background: white;
+    width: min(70rem, 100%);
+    margin: 0 auto;
+    margin-top: 5rem;
+    font-weight: normal;
+    border-radius: 1.5rem;
+    margin-bottom: 5rem;
+}
+
+main {
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 1.5rem;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'VIC-B', sans-serif;
+    font-weight: 900;
+}
+
+h2 {
+    font-size: clamp(2rem, 4vw, 3rem);
+    letter-spacing: -1px;
+    color: hsl(var(--primary-color));
+
+
+}
+
+h4 {
+    color: hsl(var(--primary-color));
+}
+
+h3 {
+    font-size: clamp(1.5rem, 3vw, 2rem);
+}
+
+.contact-card {
+    grid-column: span 4;
+    background-color: white;
+    box-shadow: 17px 10px 16px 0px hsl(var(--primary-color), 0.2);
+    border-radius: 1rem;
+    padding-inline: 2rem;
+    padding-block: 2rem;
+    transform: translate(-3rem, -3rem);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: -2rem;
+    color: rgb(36, 36, 36);
+
+    h1 {
+        margin-bottom: 1rem;
+        letter-spacing: -1px;
+        text-align: center;
+        font-size: clamp(2rem, 3vw, 2.5rem);
+    }
+
+
+    img {
+        width: 10rem;
+        aspect-ratio: 1;
+        background-color: pink;
+        border-radius: 100vw;
+        margin-bottom: 1rem;
+        object-fit: cover;
+        object-position: right;
+    }
+}
+
+.contact-info {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 1rem;
+    margin-bottom: 0.2em;
+
+}
+
+
+.strong {
+    font-weight: bold;
+}
+
+.intro {
+    grid-column: span 7;
+    place-self: center;
+}
+
+.experience {
+    grid-column: 1 / -1;
+}
+
+.job {
+
+    margin-block: 2rem;
+
+    .text {
+
+        display: grid;
+
+        grid-template-columns: repeat(12, 1fr);
+        gap: 1rem;
+
+        .description {
+            grid-column: 1 / span 8;
+        }
+
+        p {
+
+            margin-bottom: 0.5em;
+        }
+    }
+
+    .achievements {
+        grid-column: 9 / span 4;
+        font-size: 0.9em;
+        grid-row-start: 1;
+        padding: 1rem;
+        background-color: hsl(var(--primary-color), 0.04);
+        border-radius: 1rem;
+        color: hsl(var(--primary-color));
+        height: min-content;
+
+        h4 {
+            margin-bottom: 0.2em;
+            font-size: 1.1em;
+        }
+
+        ul {
+            max-width: 100%;
+            padding: unset;
+            list-style-position: outside;
+            transform: translateX(1em);
+            padding-right: 1em;
+
+            li::marker {
+                color: hsl(var(--primary-color));
+            }
+        }
+
+        li {
+            margin-bottom: 0.2em;
+        }
+    }
+
+    img {
+        max-width: 7rem;
+        max-height: 5rem;
+        margin-right: 1rem;
+
+    }
+
+    .top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+    }
+}
+
+.skills {
+    max-width: 50rem;
+    padding-top: 1rem;
+    grid-column: span 8;
+
+    &>* {
+        display: inline-block;
+        margin-right: 0.7rem;
+        margin-bottom: 0.7rem;
+        padding-inline: 0.7rem;
+        background-color: hsl(var(--primary-color), 0.1);
+        border-radius: 100vw;
+        text-transform: uppercase;
+
+    }
+}
+
+@media (max-width: 900px) {
+    .intro {
+        grid-row: 2;
+        grid-column: 1 / -1;
+    }
+
+    .contact-card {
+        grid-column: 1/ -1;
+        align-items: flex-start;
+        padding: 1rem;
+        transform: translateY(-3rem);
+        box-shadow: 4px 10px 16px 0px hsl(var(--primary-color), 0.2);
+    }
+
+
+}
+
+@media (max-width: 600px) {
+
+
+
+    .job .top {
+        flex-direction: column-reverse;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .job .text {
+        &>* {
+            grid-column: 1 / -1 !important;
+            grid-row: unset;
+
+        }
+    }
+
+
+
+}
