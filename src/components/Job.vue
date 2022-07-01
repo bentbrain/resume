@@ -12,7 +12,7 @@ import SkillVue from "./Skill.vue";
           >, {{ job.startDate }} – {{ job.endDate }}
         </p>
       </div>
-      <img :src="`../src/assets/logos/${job.logo}`" alt="" />
+      <img :src="`./assets/logos/${job.logo}`" :alt="`${job.company} Logo`" />
     </div>
 
     <div class="text">
