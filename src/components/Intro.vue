@@ -2,13 +2,9 @@
   <div class="intro">
     <h2>Summary</h2>
     <p>
-      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates
-      repellendus alias rerum aliquam, saepe totam, hic vel ad esse quasi
-      necessitatibus quam? Quaerat veniam aliquid nobis, quidem eveniet
-      temporibus consequuntur! Suscipit, quidem natus illo laboriosam,
-      repellendus autem eum, quo facilis ab explicabo iusto est quibusdam?
-      Obcaecati sapiente fugit corporis fuga sit. Maiores, consequuntur? Natus
-      modi laboriosam eius quas voluptatum consequuntur!
+<p>With a background in design and a love of technology, my goal is to bring beautiful and impactful designs to life on the web. My experience covers a broad range of creative practices including graphic design, motion graphics and photography – but nothing excites me more than combining all of these skills while designing for the web.</p>
+<p>I’ve had great responsibilities in my roles, including as a Retoucher, ensuring images were perfect before national publication for large Australian brands. As a Web Designer, I created a fresh and engaging Order Confirmation page for Australia’s largest online retailer.</p>
+
     </p>
   </div>
 </template>
