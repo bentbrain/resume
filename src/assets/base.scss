@@ -130,7 +130,11 @@ h3 {
 
 .job {
 
-    margin-block: 2rem;
+    margin-bottom: 2rem;
+
+    &:last-child {
+        margin-bottom: unset;
+    }
 
     .text {
 

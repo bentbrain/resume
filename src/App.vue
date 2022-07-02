@@ -2,6 +2,7 @@
 import ContactCardVue from "./components/ContactCard.vue";
 import IntroVue from "./components/Intro.vue";
 import ExperienceVue from "./components/Experience.vue";
+import EducationVue from "./components/Education.vue";
 </script>
 
 <template>
@@ -9,6 +10,7 @@ import ExperienceVue from "./components/Experience.vue";
     <ContactCardVue :contact="contact" />
     <IntroVue />
     <ExperienceVue :jobs="jobs" />
+    <EducationVue />
   </main>
 </template>
 
