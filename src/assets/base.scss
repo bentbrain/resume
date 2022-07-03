@@ -1,15 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600;900&display=swap');
-
-
-@font-face {
-    font-family: "VIC-B";
-    src: url("../assets/fonts/VIC-Bold.woff2") format("woff2");
-}
-
-@font-face {
-    font-family: "VIC-R";
-    src: url("../assets/fonts/VIC-Regular.woff2") format("woff2");
-}
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;700;900&display=swap');
 
 :root {
     --primary-color: 240, 100%, 63%;
@@ -18,7 +7,7 @@
 body {
     min-height: 100vh;
     line-height: 1.6;
-    font-family: 'VIC-R', Arial, Helvetica, sans-serif;
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
     font-size: 1rem;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
@@ -48,7 +37,11 @@ h1,
 h2,
 h3,
 h4 {
-    font-family: 'VIC-B', sans-serif;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+}
+
+h1 {
     font-weight: 900;
 }
 
@@ -56,8 +49,7 @@ h2 {
     font-size: clamp(2rem, 4vw, 3rem);
     letter-spacing: -1px;
     color: hsl(var(--primary-color));
-
-
+    font-weight: 900;
 }
 
 h4 {
