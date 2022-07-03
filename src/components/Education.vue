@@ -11,7 +11,7 @@
             <strong>Communication Design, </strong>Swinburne University of
             Technology – 2020
           </p>
-          <p>Winner of the Swinburne Excellence in Design Award</p>
+          <p><i>Winner of the Swinburne Excellence in Design Award</i></p>
         </div>
         <img src="../assets/logos/swinburne-logo.svg" alt="" />
       </div>

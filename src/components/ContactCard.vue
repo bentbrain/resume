@@ -1,6 +1,6 @@
 <template>
   <div class="contact-card">
-    <img src="../assets/headshot.jpeg" alt="" />
+    <img src="../assets/headshot.png" alt="" />
     <h1>{{ contact[0].name }}</h1>
     <div class="info-block">
       <div

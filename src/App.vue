@@ -137,7 +137,7 @@ export default {
           startDate: "Jan 2019",
           endDate: "Mar 2019",
           description: [
-            "Took ownership of many aspects of the brand's design, including packaging and web design to instill a consistent image and message. Photographed and Filmed content for product listings, EDMs and social media",
+            "Assumed ownership of many aspects of the brand's design, including packaging and web design to instill a consistent image and message. Photographed and Filmed content for product listings, EDMs and social media",
           ],
           achievements: [
             "Designed packaging for all customer orders.",
